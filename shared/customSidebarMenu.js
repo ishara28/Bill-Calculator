@@ -44,7 +44,7 @@ export default class CustomDrawer extends Component {
               </Text>
               {/*Top Large Image */}
               <FlexImage
-                source={require('../assets/icons/start2.png')}
+                source={require('./start2.png')}
                 style={{width: 250, height: 100}}
               />
             </View>

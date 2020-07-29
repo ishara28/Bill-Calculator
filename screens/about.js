@@ -78,7 +78,7 @@ export class about extends Component {
               marginTop: 4,
             }}>
             <Image
-              source={require('../assets//profile.png')}
+              source={require('./profile.png')}
               style={{width: 80, height: 80}}
             />
             <Text style={{fontSize: 16}}>Bill Calculator</Text>
@@ -150,7 +150,7 @@ export class about extends Component {
                       <Label>Name (Nickname)</Label>
                       <Input
                         value={this.state.name}
-                        onChangeText={name => this.setState({name})}
+                        onChangeText={(name) => this.setState({name})}
                       />
                     </Item>
                     <Item floatingLabel last>
@@ -158,14 +158,14 @@ export class about extends Component {
                       <Input
                         style={{marginBottom: 20}}
                         value={this.state.message}
-                        onChangeText={message => this.setState({message})}
+                        onChangeText={(message) => this.setState({message})}
                       />
                     </Item>
                   </Form>
                   <AwesomeButton
                     width="100%"
                     progress
-                    onPress={next => {
+                    onPress={(next) => {
                       /** Do Something **/
                       this.sendFeedback();
                       next();
